@@ -797,7 +797,7 @@ public class PreparedStatement extends com.mysql.jdbc.StatementImpl implements j
     }
 
     protected void detectFractionalSecondsSupport() throws SQLException {
-        this.serverSupportsFracSecs = this.connection != null && this.connection.versionMeetsMinimum(5, 6, 4);
+        this.serverSupportsFracSecs = false;
     }
 
     /**
